@@ -16,7 +16,7 @@ public:
 };
 
 // Violating SRP : Handling multiple responsibilites in a single class;
-// this award goes to you ye kya m bnata hun uska muh 
+// this award goes to you ye kya m bnata hun uska muh
 class ShoppingCart
 {
 private:
@@ -44,7 +44,7 @@ public:
         return total;
     }
 
-    // 2. Prints invoice
+    // 2. Prints invoice : ->> Violating the SRP Principle
     void printInvoice()
     {
         cout << "Shoppint cart Invoice\n";
@@ -55,7 +55,7 @@ public:
         cout << "Total : " << calculateTotalPrice() << endl;
     }
 
-    // 3. Saves to DB;
+    // 3. Saves to DB; --->> Violationg the SRP Principle
     void saveToDB()
     {
         cout << "Saving shopping cart to DB" << endl;
