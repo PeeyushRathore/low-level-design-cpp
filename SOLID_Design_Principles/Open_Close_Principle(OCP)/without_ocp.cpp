@@ -60,7 +60,7 @@ public:
         {
             cout << c->name << " :" << c->price << endl;
         }
-        cout << cart->calculateTotalPrice();
+        cout << cart->calculateTotalPrice()<< endl;
     }
 };
 
